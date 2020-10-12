@@ -1,0 +1,7 @@
+create database finance_tracker;
+
+use finance_tracker;
+
+create table userinfo(id int NOT NULL, firstName varchar(30) NOT NULL, lastName varchar(30) NOT NULL, username varchar(30) NOT NULL, password varchar(30) NOT NULL, email varchar(30) NOT NULL, dob date NOT NULL, zipCode int NOT NULL, nameOfBusiness varchar(30) NOT NULL, PRIMARY KEY(id) );
+
+insert into userinfo values (123,'John','Hamilton','jhamil3','testingThis1','jhamilton@yahoo.com','1976-05-20',03106,'Kwizzy'),(124,'Betty','Dingle','bdingle4','testingThis2','bdingle@yahoo.com','1981-06-13',03106,'Donello');
