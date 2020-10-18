@@ -11,3 +11,5 @@ create table item(id int NOT NULL AUTO_INCREMENT, name varchar(30) NOT NULL, cos
 insert into item values(1,'Scrunchie',1.15,2.25,2,'2016-10-17'),(2,'Maxi',0.56,1.95,1,'2017-05-26');
 
 select Month(MonthAndYear) as OnlyMonth, Year(MonthAndYear) as OnlyYear from item;
+
+alter table userinfo modify id int AUTO_INCREMENT; 
