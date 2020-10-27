@@ -1,0 +1,1 @@
+create table itemData(document int NOT NULL AUTO_INCREMENT, partId int NOT NULL, itemId int NOT NULL, itemName varchar(30) NOT NULL, partName varchar(30) NOT NULL, partCost DECIMAL(10,2) NOT NULL, PRIMARY KEY(document) );
