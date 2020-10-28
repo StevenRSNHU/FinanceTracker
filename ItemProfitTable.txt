@@ -1,0 +1,1 @@
+create table itemprofit(document int NOT NULL AUTO_INCREMENT, itemId int NOT NULL, itemName varchar(30) NOT NULL, month varchar(30) NOT NULL, year int NOT NULL, itemRetail DECIMAL(10,2) NOT NULL, itemAmount int NOT NULL, PRIMARY KEY(document) ); 
