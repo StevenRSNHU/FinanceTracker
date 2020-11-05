@@ -1,3 +1,5 @@
+create database finance_tracker;
+
 create table item(document int NOT NULL AUTO_INCREMENT, userID int NOT NULL, itemId int NOT NULL, itemName varchar(30) NOT NULL, costToMake decimal(10,2) NOT NULL, sellingPrice decimal(10,2) NOT NULL, AmountSold int NOT NULL, AmountMade int NOT NULL, Month varchar(30) NOT NULL, Year int NOT NULL, PRIMARY KEY(document) );
 
 create table itempart(document int NOT NULL AUTO_INCREMENT, partId int NOT NULL, itemId int NOT NULL, itemName varchar(30) NOT NULL, partName varchar(30) NOT NULL, partCost decimal(10,2) NOT NULL, PRIMARY KEY(document) );
