@@ -1,0 +1,5 @@
+alter table item ADD UNIQUE(itemId);
+
+alter table itempart ADD UNIQUE(itemId);
+
+create table finalproduct(document int NOT NULL AUTO_INCREMENT, id int NOT NULL, itemName varchar(30) NOT NULL, partName varchar(30) NULL, month int NOT NULL, year int NOT NULL, cost decimal(10,2) NULL, sales decimal(10,2) NULL, profit decimal(10,2) NULL, PRIMARY KEY(document), FOREIGN KEY(id) REFERENCES item(itemId), FOREIGN KEY(id) REFERENCES itempart(itemId) );
